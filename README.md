@@ -2,10 +2,10 @@
 
 **让 AI 的审美判断，随着使用次数变准。**
 
-![version](https://img.shields.io/badge/version-1.1.0-7B5CFA?style=flat-square)
-![license](https://img.shields.io/badge/license-MIT-34A853?style=flat-square)
-![python](https://img.shields.io/badge/python-3.9%2B-2E7CF6?style=flat-square)
-![deps](https://img.shields.io/badge/dependencies-zero-8A90A2?style=flat-square)
+![版本](https://img.shields.io/badge/%E7%89%88%E6%9C%AC-1.0.0-7B5CFA?style=flat-square)
+![许可](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-%E5%BC%80%E6%BA%90-34A853?style=flat-square)
+![运行环境](https://img.shields.io/badge/%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83-3.9%20%E4%BB%A5%E4%B8%8A-2E7CF6?style=flat-square)
+![依赖](https://img.shields.io/badge/%E4%BE%9D%E8%B5%96-%E6%97%A0-8A90A2?style=flat-square)
 
 > 一个"审美积累"技能：把每次生成、评审、返工，变成一条可复用的知识卡；
 > 按证据数量自动晋升或衰减，防止知识库变成自我吹捧的垃圾场。
@@ -163,14 +163,30 @@ ui-taste-engine/
 
 ---
 
+## 对外检索接口
+
+本库的知识卡可直接被 `website-ui-designer` 的检索引擎读取（零依赖，无需额外服务）：
+
+```bash
+# 在 website-ui-designer 目录下
+python scripts/rag.py index                                  # 会同时索引本库四类卡
+python scripts/rag.py query "强调色用几次" --type P --format prompt
+```
+
+索引以 BM25 + 中文二元组 + 口语同义词实现，知识卡按置信度加权；无命中时输出"无依据"，
+不编造条款。详细规则见 `website-ui-designer/references/rag-retrieval.md`。
+
+---
+
 ## 版本历史
 
-当前版本 **v1.1.0**（2026-10-22）。完整记录见 [CHANGELOG.md](./CHANGELOG.md)。
+当前版本 **v1.0.0**（2026-10-22），首个正式发布版本。完整记录见 [CHANGELOG.md](./CHANGELOG.md)。
 
-| 版本 | 日期 | 关键变化 |
+| 版本 | 日期 | 说明 |
 |---|---|---|
-| **v1.1.0** | 2026-10-22 | README 重构：上手路径、命令速查、版本体系 |
-| v1.0.0 | 2026-10-22 | 首个版本：四类知识卡、置信度生命周期、晋升闸门、10 例回归集、kb CLI |
+| **v1.0.0** | 2026-10-22 | 首个正式版：四类知识卡、置信度生命周期、晋升闸门、评估体系、知识检索接口 |
+
+**版本约定**：修订号（1.0.x）修 bug 与文档；次版本号（1.x.0）加能力；主版本号（2.0.0）在不兼容变更时使用。
 
 ---
 

@@ -1,13 +1,13 @@
 ---
 name: ui-taste-engine
-version: 1.1.0
+version: 1.0.0
 updated: 2026-10-22
 description: UI 审美进化引擎。把每次生成、评审、用户反馈转化为可复用的 UI 知识卡，并按置信度晋升/衰减，持续降低 AI 味、提升界面判断力。当需要"积累 UI 经验"、"让界面越做越好"、"消除 AI 模板感"、"把自然语言需求翻译成设计参数"、"评估界面专业度"时使用。配合 website-ui-designer 使用。触发词：UI知识库、审美积累、自我进化、AI味、模板感、界面评审、设计Token沉淀。
 ---
 
 # UI Taste Engine — UI 审美进化引擎
 
-> **版本 1.1.0** · 2026-10-22 · 变更见 [CHANGELOG.md](./CHANGELOG.md)
+> **版本 1.0.0** · 2026-10-22 · 变更见 [CHANGELOG.md](./CHANGELOG.md)
 > 新用户先看 [README.md](./README.md) 的「三分钟上手」；本文件是机制规范。
 
 ## 定位
@@ -87,6 +87,11 @@ ui-taste-engine/
 │   └── evaluation.md         # 指标、盲评、专业度阶梯
 └── scripts/kb.py             # 知识库 CLI：add/list/check/promote/decay/use/stats
 ```
+
+## 对外检索接口
+
+本库被 `website-ui-designer/scripts/rag.py` 直接索引：生成前按自然语言查询，
+把命中卡片以「必须遵守 / 明确禁止」注入提示词。无需额外服务，零依赖。
 
 ## 常用命令
 
