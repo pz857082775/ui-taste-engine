@@ -2,10 +2,11 @@
 
 **让 AI 的审美判断，随着使用次数变准。**
 
-![版本](https://img.shields.io/badge/%E7%89%88%E6%9C%AC-1.0.0-7B5CFA?style=flat-square)
+![版本](https://img.shields.io/badge/%E7%89%88%E6%9C%AC-1.0.1-7B5CFA?style=flat-square)
 ![许可](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-%E5%BC%80%E6%BA%90-34A853?style=flat-square)
 ![运行环境](https://img.shields.io/badge/%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83-3.9%20%E4%BB%A5%E4%B8%8A-2E7CF6?style=flat-square)
 ![依赖](https://img.shields.io/badge/%E4%BE%9D%E8%B5%96-%E6%97%A0-8A90A2?style=flat-square)
+![版权](https://img.shields.io/badge/%E7%89%88%E6%9D%83-%E7%B1%B3%E4%B9%90-7B5CFA?style=flat-square)
 
 > 一个"审美积累"技能：把每次生成、评审、返工，变成一条可复用的知识卡；
 > 按证据数量自动晋升或衰减，防止知识库变成自我吹捧的垃圾场。
@@ -180,11 +181,12 @@ python scripts/rag.py query "强调色用几次" --type P --format prompt
 
 ## 版本历史
 
-当前版本 **v1.0.0**（2026-10-22），首个正式发布版本。完整记录见 [CHANGELOG.md](./CHANGELOG.md)。
+当前版本 **v1.0.1**（2026-10-22），首个正式发布版本。完整记录见 [CHANGELOG.md](./CHANGELOG.md)。
 
 | 版本 | 日期 | 说明 |
 |---|---|---|
-| **v1.0.0** | 2026-10-22 | 首个正式版：四类知识卡、置信度生命周期、晋升闸门、评估体系、知识检索接口 |
+| **v1.0.1** | 2026-10-22 | 徽章调整：平台改用「H5页面 / APP」，新增版权徽章「米乐」 |
+| v1.0.0 | 2026-10-22 | 首个正式版：四类知识卡、置信度生命周期、晋升闸门、评估体系、知识检索接口 |
 
 **版本约定**：修订号（1.0.x）修 bug 与文档；次版本号（1.x.0）加能力；主版本号（2.0.0）在不兼容变更时使用。
 
@@ -209,3 +211,5 @@ python scripts/rag.py query "强调色用几次" --type P --format prompt
 ## License
 
 MIT
+
+© 2026 米乐（版权归米乐所有）
