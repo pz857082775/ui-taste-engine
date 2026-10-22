@@ -1,0 +1,84 @@
+# 固定回归集（10 例）
+# 用途：任何 confidence→4 的晋升，必须跑一遍，均分不降 >2、无单例降 >5
+# 打分用 website-ui-designer/references/review-rubric.md
+
+cases:
+  - id: E01
+    name: SaaS 官网首页
+    page_type: marketing
+    platform: pc
+    brief: "面向中小团队的协作 SaaS，卖点是 5 分钟接入，目标动作是注册试用"
+    focus: ["反 AI 脸", "单一签名细节", "首屏 3 秒可读"]
+    must_include: ["一句价值主张", "唯一主 CTA", "真实界面片段或产品图"]
+
+  - id: E02
+    name: 咖啡品牌单页
+    page_type: marketing
+    platform: h5
+    brief: "小型精品咖啡，每月只烘一批，卖点是小批量与当季风味"
+    focus: ["移动原生化", "字号可读性", "独有素材驱动创意"]
+    must_include: ["吸底操作", "44px 热区", "safe-area 预留"]
+
+  - id: E03
+    name: 数据后台总览
+    page_type: dashboard
+    platform: pc
+    brief: "电商运营后台首页，需要看销售额、订单、库存预警、趋势"
+    focus: ["KPI 四段结构", "表格规范", "图表克制"]
+    must_include: ["4 张 KPI", "1 个趋势图", "1 个表格 + 状态徽章"]
+
+  - id: E04
+    name: 自媒体工作台首页
+    page_type: creator
+    platform: pc
+    brief: "内容创作者工作台，首页要先看今日待办与爆款研究"
+    focus: ["待办 C 位", "平台品牌色", "sparkline"]
+    must_include: ["待办卡带完成数", "4 个 KPI 带 trend", "平台标签"]
+
+  - id: E05
+    name: 医疗工作台首页
+    page_type: service
+    platform: pc
+    brief: "呼吸内科医生工作台，上午要先看今日预约与待办"
+    focus: ["Hero 问候横幅", "时间轴列表", "语义徽章"]
+    must_include: ["问候横幅", "时间轴预约", "待办 + 快捷操作"]
+
+  - id: E06
+    name: 电商订单列表
+    page_type: dashboard
+    platform: pc
+    brief: "订单管理页，需要筛选、批量操作、状态流转"
+    focus: ["表格密度", "筛选行", "状态语义一致"]
+    must_include: ["筛选行", "分页", "5 种状态徽章"]
+
+  - id: E07
+    name: 预约表单页
+    page_type: service
+    platform: h5
+    brief: "诊所预约表单，含日期时间选择与备注"
+    focus: ["表单状态", "热区", "错误提示"]
+    must_include: ["必填标识", "日期时间双列", "错误态"]
+
+  - id: E08
+    name: 会员中心
+    page_type: generic
+    platform: miniapp
+    brief: "会员权益与积分明细，需要 tabBar 与列表"
+    focus: ["rpx 适配", "tabBar", "分包意识"]
+    must_include: ["权益卡", "积分列表", "底部 tabBar"]
+
+  - id: E09
+    name: 运动数据页
+    page_type: generic
+    platform: app
+    brief: "跑步记录与周趋势，需要暗色模式"
+    focus: ["安全区", "暗色令牌", "图表可读"]
+    must_include: ["安全区预留", "暗色配色", "周趋势图"]
+
+  - id: E10
+    name: 商品详情
+    page_type: ecommerce
+    platform: h5
+    brief: "单品详情页，含图文、规格选择、加购"
+    focus: ["图文节奏", "吸底栏", "规格选择状态"]
+    must_include: ["主图区", "规格选择", "吸底加购"]
