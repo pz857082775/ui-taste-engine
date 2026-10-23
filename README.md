@@ -2,7 +2,7 @@
 
 **让 AI 的审美判断，随着使用次数变准。**
 
-![版本](https://img.shields.io/badge/%E7%89%88%E6%9C%AC-1.0.1-7B5CFA?style=flat-square)
+![版本](https://img.shields.io/badge/%E7%89%88%E6%9C%AC-1.1.0-7B5CFA?style=flat-square)
 ![许可](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-%E5%BC%80%E6%BA%90-34A853?style=flat-square)
 ![运行环境](https://img.shields.io/badge/%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83-3.9%20%E4%BB%A5%E4%B8%8A-2E7CF6?style=flat-square)
 ![依赖](https://img.shields.io/badge/%E4%BE%9D%E8%B5%96-%E6%97%A0-8A90A2?style=flat-square)
@@ -49,7 +49,7 @@ cd ~/.workbuddy/skills/ui-taste-engine
 python scripts/kb.py list
 ```
 
-你会看到 4 张种子卡：强调色预算、KPI 卡结构、预隐藏致空白、趋势色按领域。
+你会看到 12 张卡：参数 3 / 手法 4 / 反例 2 / 判断 2，含 26 张真实截图的分析结论。
 
 ### 第 3 步 · 用起来（三种最常用）
 
@@ -181,11 +181,12 @@ python scripts/rag.py query "强调色用几次" --type P --format prompt
 
 ## 版本历史
 
-当前版本 **v1.0.1**（2026-10-22），首个正式发布版本。完整记录见 [CHANGELOG.md](./CHANGELOG.md)。
+当前版本 **v1.1.0**（2026-10-22），首个正式发布版本。完整记录见 [CHANGELOG.md](./CHANGELOG.md)。
 
 | 版本 | 日期 | 说明 |
 |---|---|---|
-| **v1.0.1** | 2026-10-22 | 徽章调整：平台改用「H5页面 / APP」，新增版权徽章「米乐」 |
+| **v1.1.0** | 2026-10-23 | 批次分析 26 张截图，新增 8 张知识卡 |
+| v1.0.1 | 2026-10-22 | 徽章调整：平台改用「H5页面 / APP」，新增版权徽章「米乐」 |
 | v1.0.0 | 2026-10-22 | 首个正式版：四类知识卡、置信度生命周期、晋升闸门、评估体系、知识检索接口 |
 
 **版本约定**：修订号（1.0.x）修 bug 与文档；次版本号（1.x.0）加能力；主版本号（2.0.0）在不兼容变更时使用。
